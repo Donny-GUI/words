@@ -40,11 +40,11 @@ I would never have made this wonderful tool if it wasnt for the creators of that
 ### Getting Started
 
 ```bash
+
 git clone https://github.com/Donny-GUI/words.git
 cd words
 python3 setup.py
-python3 setup_cmdline_tool.py
-words about "Dolphins"
+python3 main.py "iCarly"
 
 ```
 
