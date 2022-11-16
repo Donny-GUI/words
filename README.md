@@ -1,5 +1,16 @@
-# words
-use the python wikipedia api to get words that pertain to a certain subject. Good for building password list and natural language processing
+# __Words__
+Use the python wikipediaapi package to get english words on a subject of your choosing. Good for building password list and natural language processing
+
+## My Real World Application
+
+I have a linux copy of this on my Optiplex 9020, when im building passwords list to execute spearfished attacks 
+or trying to help my friends recover hashed documents, I build my word lists using this oddly useful tool. 
+I build specialized powerful word lists in seconds. Works like a charm everytime. Combinded with pdfcrack its a fun combination, it beats trying to work out the best possible charset for cracking.
+
+well enjoy.
+I have a copy for suited for macos and ubuntu. if anyone is interested i will post them here.
+
+
 
 ## Installation
 
