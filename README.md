@@ -1,6 +1,31 @@
 # words
 use the python wikipedia api to get words that pertain to a certain subject. Good for building password list and natural language processing
 
+## Installation
+
+### Dependencies
+
+  linux / macos
+
+```bash
+pip3 install wikipedia
+```
+  windows
+  
+```
+pip install wikipedia
+```
+### Getting Started
+
+```bash
+git clone https://github.com/Donny-GUI/words.git
+cd words
+python3 setup.py
+python3 setup_cmdline_tool.py
+words about "Dolphins"
+
+```
+
 
 ## File Structure
 
