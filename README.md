@@ -13,3 +13,15 @@ Pretty straight forward filestructure, prevents harsh loading times for long wor
 ### ./words/a/
 
 ![file2](https://user-images.githubusercontent.com/108424001/202072662-dc18ed2b-45af-4f35-8221-07f691cf3d30.png)
+
+
+## Creating the File Structure
+  i wrote a custom script to create the file structure. If you need to restart the collection just delete it for now and rerun setup.py
+
+```bash
+
+cd words
+python3 setup.py
+
+```
+ ---
