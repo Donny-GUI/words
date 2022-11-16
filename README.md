@@ -20,12 +20,23 @@ I have a copy for suited for macos and ubuntu. if anyone is interested i will po
 
 ```bash
 pip3 install wikipedia
+pip3 install wikipedia-API
 ```
+
   windows
   
 ```
 pip install wikipedia
+pip install wikipedia-API
 ```
+
+PLEASE consider checking out the wikipedia docs for python here. 
+
+https://pypi.org/project/Wikipedia-API/
+
+I would never have made this wonderful tool if it wasnt for the creators of that package. Thanks a million! 🤙
+
+
 ### Getting Started
 
 ```bash
