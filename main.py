@@ -1,6 +1,16 @@
 import os
 import sys
+import platform
 import wikipediaapi
+
+__platform__ = sys.platform 
+match __platform__[0]:
+    case 'l':
+        SLASH='/'
+    case 'w':
+        SLASH='\\'
+    case 'd':
+        SLASH ='/'
 
 ALPHAX = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 ALPHA = [x for x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
@@ -8,6 +18,20 @@ alpha = [x.lower() for x in ALPHA]
 ok_fine = "-_'`&@"
 punctuationx = '!?.,:;"[]}{()*&^%$#~\n\t'
 punctuation = [x for x in punctuationx]
+
+
+class WordBank:
+    def __init__(self, about, to_file=True):
+        self.about = about
+        self.page = get_page_about(self.about)
+        self.wordlist = wikipedia_page_to_word_list(self.page)
+        if to_file:
+            parse_words_to_file(self.wordlist)
+
+    def about(self, topic):
+        get_words_about(topic)
+
+
 
 def get_page_about(topic):
     wikipedia_helper = wikipediaapi.Wikipedia(
@@ -58,7 +82,7 @@ def parse_words_to_file(words):
     for word in words:
         first = word[0]
         second = word[1]
-        super_path = f"{curdir}\\words\\{first}\\{first}{second}" 
+        super_path = f"{curdir}{SLASH}words{SLASH}{first}{SLASH}{first}{second}" 
         with open(super_path, "a") as afile:
             xword = str(word).strip()
             afile.write(f"{xword}\n")
